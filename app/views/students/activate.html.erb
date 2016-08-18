@@ -1,0 +1,10 @@
+<h1> Change your status below:</h1>
+<%= form_tag(student_path, :method => "post") do %>
+
+<%= radio_button_tag(:active, true) %>
+<%= label_tag(:active_status, "Active") %>
+<%= radio_button_tag(:active, false) %>
+<%= label_tag(:active_status, "Not Active") %>
+<%= submit_tag("Submit") %>
+
+<% end %>
